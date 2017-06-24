@@ -11,9 +11,9 @@ public class ShipCost {
 
     System.out.println("This application will calculate the shipping cost based on weight and distance.");
     System.out.println("Enter the weight for your package in pounds: ");
-    Float weight = Float.parseFloat(myConsole.readLine());
+    Float weight = inputWeight();
     System.out.println("Enter the distance in miles you want to ship: ");
-    Float distance = Float.parseFloat(myConsole.readLine());
+    Float distance = inputDistance();
 
     Float cost = calculateCost(weight, distance);
     outputCost(cost, weight, distance);
